@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+	<bean id ="b1" class="com.lti.springdemo.Bean1" init-method="init" destroy-method="destroy"></bean>
+	<bean id ="b2" class="com.lti.springdemo.Bean2"></bean>
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+	<bean id ="b3" class="com.lti.springdemo.Bean3"></bean>
+
+   </beans>
